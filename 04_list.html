@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
+    />
+    <style>
+      #menu{
+        list-style: none;
+      }
+      #menu li{
+        float: left;
+        width: 70px;
+        background-color: aqua;
+        text-align: center;
+        margin-right: 10px;
+      }
+      ul li::marker{
+        content: '✔';
+        font-size: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>목록 관련 태그</h1>
+    <a href="index.html"
+      ><span class="material-symbols-outlined"> home </span>Home
+    </a>
+    <hr />
+    <ol id="menu" type="A">
+      <li>한식</li>
+      <li>중식</li>
+      <li>양식</li>
+      <li>분식</li>
+    </ol>
+    <ul type="circle" style="clear: both;">
+      <li>한식</li>
+      <li>중식</li>
+      <li>양식</li>
+      <li>분식</li>
+    </ul>
+    <script></script>
+  </body>
+</html>
