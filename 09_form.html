@@ -31,6 +31,24 @@
     <form action="index.html" method="get">
       <fieldset>
         <legend>입력 양식 태그 종류</legend>
+        <div>
+          <label for="subject">제목</label>
+          <input id="subject" name="subject" type="text" />
+        </div>
+        <div>
+          <label for="password">비밀번호</label>
+          <input type="password" name="pw" id="password" />
+        </div>
+        <div>
+          <label for="female">여</label>
+          <input id="female" type="radio" name="gender" value="여" />
+          <label for="male">남</label>
+          <input id="male" type="radio" name="gender" value="남" />
+        </div>
+        <div>
+          <input type="button" value="작성 button" />
+          <input type="submit" value="작성 submit" />
+        </div>
       </fieldset>
     </form>
     <script></script>
