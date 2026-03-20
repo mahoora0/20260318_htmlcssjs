@@ -10,75 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
     />
     <style>
-      ul li:nth-child(2n + 1) {
+      p::first-letter {
+        font-size: 30pt;
+        font-weight: bold;
+      }
+      p::first-line {
+        color: brown;
+      }
+      p::selection {
+        background-color: pink;
         color: red;
-        font-weight: bold;
       }
-
-      ul span:nth-child(2n) {
-        color: blue;
-        font-weight: bold;
+      h1::before {
+        content: "09 ";
       }
-      ul li:first-child {
-        background-color: yellow;
-      }
-      ul span:last-child {
-        background-color: yellow;
-      }
-      ol li:nth-of-type(2n) {
-        color: red;
-        font-weight: bold;
-      }
-      ol li:nth-of-type(2n + 1) {
-        color: blue;
-        font-weight: bold;
-      }
-      ol li:first-of-type {
-        background-color: yellowgreen;
-      }
-      ol li:last-of-type {
-        background-color: yellowgreen;
+      h1::after {
+        content: " 참 쉬워요~!";
       }
     </style>
   </head>
 
   <body>
     <h1>문자 선택자</h1>
-    <p>checked, focus, disabled</p>
     <a href="/">
       <span class="material-symbols-outlined">home</span>
       Home
     </a>
     <hr />
 
-    <ul>
-      <li>list 1</li>
-      <span>span 1</span>
-      <li>list 2</li>
-      <span>span 2</span>
-      <li>list 3</li>
-      <span>span 3</span>
-
-      <li>list 4</li>
-      <span>span 4</span>
-      <li>list 5</li>
-      <span>span 5</span>
-    </ul>
-
-    <ol>
-      <li>list 1</li>
-      <span>span 1</span>
-      <li>list 2</li>
-      <span>span 2</span>
-      <li>list 3</li>
-      <span>span 3</span>
-
-      <li>list 4</li>
-      <span>span 4</span>
-      <li>list 5</li>
-      <span>span 5</span>
-    </ol>
-
+    <p>
+      각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여
+      관계 행정기관에 필요한 지시를 할 수 있다. 대통령은 국가의 원수이며, 외국에
+      대하여 국가를 대표한다. 국회는 헌법 또는 법률에 특별한 규정이 없는 한
+      재적의원 과반수의 출석과 출석의원 과반수의 찬성으로 의결한다. 가부동수인
+      때에는 부결된 것으로 본다. 대한민국의 경제질서는 개인과 기업의 경제상의
+      자유와 창의를 존중함을 기본으로 한다. 국가안전보장에 관련되는
+      대외정책·군사정책과 국내정책의 수립에 관하여 국무회의의 심의에 앞서
+      대통령의 자문에 응하기 위하여 국가안전보장회의를 둔다. 체포·구속·압수 또는
+      수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한
+      영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에
+      해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을
+      청구할 수 있다. 국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원
+      또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를
+      받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+      민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.
+      공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 군사재판을
+      관할하기 위하여 특별법원으로서 군사법원을 둘 수 있다. 이 헌법시행 당시의
+      법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다. 국가는
+      균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의
+      지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를
+      위하여 경제에 관한 규제와 조정을 할 수 있다.
+    </p>
     <script></script>
   </body>
 </html>
