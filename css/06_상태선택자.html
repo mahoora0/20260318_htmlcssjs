@@ -10,30 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
     />
     <style>
-      div {
-        width: 300px;
-        height: 200px;
-        background-color: lime;
+      #choice:checked ~ input[type="text"] {
+        background-color: brown;
       }
-      div:hover {
-        background-color: green;
-        cursor: pointer;
+      #name:focus {
+        background-color: pink;
       }
-      div:active {
-        background-color: red;
+      #view:checked ~ label {
+        display: none;
       }
     </style>
   </head>
 
   <body>
     <h1>반응 선택자</h1>
-    <p>hover 마우스가 해당 태그의 위로 올라갈 때, active 이벤트가 발생할 때</p>
+    <p>checked, focus, disabled</p>
     <a href="/">
       <span class="material-symbols-outlined">home</span>
       Home
     </a>
     <hr />
-    <div>반응 선택자</div>
+    <div>
+      <label for="choice">checked 선택</label>
+      <input id="choice" type="checkbox" value="여" />
+      <input type="text" />
+    </div>
+    <input type="text" name="name" id="name" />
+    <div>
+      <label for="view">선택 후 disabled</label>
+      <input id="view" type="checkbox" />
+      <label id="notice">notice</label>
+    </div>
 
     <script></script>
   </body>
