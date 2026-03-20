@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
+    />
+    <style>
+      input[type="radio"] ~ label {
+        background-color: aqua;
+      }
+
+      input[type="radio"] + label {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>동위 선택자</h1>
+    <p>같은 레벨에서 뒤에 나오는 태그를 선택할 때</p>
+    <p>~ : 선택자의 같은 레벨 뒤에 있는 모든 태그를 선택</p>
+    <p>+ : 선택자의 같은 레벨 바로 뒤에 있는 태그만 선택</p>
+    <a href="/">
+      <span class="material-symbols-outlined">home</span>
+      Home
+    </a>
+    <hr />
+
+    <label for="">pre label</label>
+
+    <input type="radio" name="choice" id="on" />
+    <label for="on">On</label>
+
+    <input type="radio" name="choice" id="off" />
+    <label for="off">Off</label>
+
+    <input type="text" name="name" id="name" />
+
+    <label for="name">name 1</label>
+    <label for="name">name 2</label>
+
+    <div>
+      <label for="">div label 1</label>
+      <label for="">div label 2</label>
+    </div>
+    <script></script>
+  </body>
+</html>
