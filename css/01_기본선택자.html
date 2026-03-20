@@ -28,10 +28,14 @@
       /* 아이디 선택자 */
       #pick {
         font-weight: bold;
+        background-color: antiquewhite;
       }
-      /* 클래스 선택자 */
+      /* 클래스 선택자 중복 적용 가능 공백으로 구분*/
       .text-item {
         text-decoration: underline;
+      }
+      .text-light {
+        font-family: 궁서체;
       }
     </style>
   </head>
@@ -45,10 +49,10 @@
     <hr />
 
     <ul>
-      <li class="text_item">전체 선택자 *</li>
-      <li class="text_item">태그 선택자</li>
-      <li class="text_item" id="pick">아이디 선택자</li>
-      <li class="text_item" id="pick">클래스 선택자</li>
+      <li class="text-item text-light">전체 선택자 *</li>
+      <li class="text-item">태그 선택자</li>
+      <li class="text-item text-light" id="pick">아이디 선택자</li>
+      <li class="text-item" id="pick">클래스 선택자</li>
     </ul>
     <script></script>
   </body>
