@@ -10,73 +10,32 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
     />
     <style>
-      ul li:nth-child(2n + 1) {
-        color: red;
-        font-weight: bold;
+      .bright {
+        color: rgb(59, 196, 47);
       }
-
-      ul span:nth-child(2n) {
-        color: blue;
-        font-weight: bold;
+      .nobright {
+        color: rgb(11, 220, 235);
       }
-      ul li:first-child {
-        background-color: yellow;
-      }
-      ul span:last-child {
-        background-color: yellow;
-      }
-      ol li:nth-of-type(2n) {
-        color: red;
-        font-weight: bold;
-      }
-      ol li:nth-of-type(2n + 1) {
-        color: blue;
-        font-weight: bold;
-      }
-      ol li:first-of-type {
-        background-color: yellowgreen;
-      }
-      ol li:last-of-type {
-        background-color: yellowgreen;
+      li:not(.nobright) {
+        color: black;
       }
     </style>
   </head>
 
   <body>
     <h1>부정 선택자</h1>
-    <p>checked, focus, disabled</p>
+    <p></p>
     <a href="/">
       <span class="material-symbols-outlined">home</span>
       Home
     </a>
     <hr />
 
-    <ul>
-      <li>list 1</li>
-      <span>span 1</span>
-      <li>list 2</li>
-      <span>span 2</span>
-      <li>list 3</li>
-      <span>span 3</span>
-
-      <li>list 4</li>
-      <span>span 4</span>
-      <li>list 5</li>
-      <span>span 5</span>
-    </ul>
-
     <ol>
-      <li>list 1</li>
-      <span>span 1</span>
-      <li>list 2</li>
-      <span>span 2</span>
-      <li>list 3</li>
-      <span>span 3</span>
-
-      <li>list 4</li>
-      <span>span 4</span>
-      <li>list 5</li>
-      <span>span 5</span>
+      <li class="bright">강아지</li>
+      <li class="bright">고양이</li>
+      <li class="nobright">소</li>
+      <li class="nobright">돼지</li>
     </ol>
 
     <script></script>
