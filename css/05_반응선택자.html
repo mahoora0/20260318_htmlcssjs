@@ -10,44 +10,28 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home"
     />
     <style>
-      input[type="radio"] ~ label {
-        background-color: aqua;
+      div {
+        width: 300px;
+        height: 200px;
+        background-color: lime;
       }
-
-      input[type="radio"] + label {
-        background-color: yellowgreen;
+      div:hover {
+        background-color: green;
+        cursor: pointer;
       }
     </style>
   </head>
 
   <body>
-    <h1>동위 선택자</h1>
-    <p>같은 레벨에서 뒤에 나오는 태그를 선택할 때</p>
-    <p>~ : 선택자의 같은 레벨 뒤에 있는 모든 태그를 선택</p>
-    <p>+ : 선택자의 같은 레벨 바로 뒤에 있는 태그만 선택</p>
+    <h1>반응 선택자</h1>
+    <p>hover 마우스가 해당 태그의 위로 올라갈 때, active 이벤트가 발생할 때</p>
     <a href="/">
       <span class="material-symbols-outlined">home</span>
       Home
     </a>
     <hr />
+    <div>반응 선택자</div>
 
-    <label for="">pre label</label>
-
-    <input type="radio" name="choice" id="on" />
-    <label for="on">On</label>
-
-    <input type="radio" name="choice" id="off" />
-    <label for="off">Off</label>
-
-    <input type="text" name="name" id="name" />
-
-    <label for="name">name 1</label>
-    <label for="name">name 2</label>
-
-    <div>
-      <label for="">div label 1</label>
-      <label for="">div label 2</label>
-    </div>
     <script></script>
   </body>
 </html>
