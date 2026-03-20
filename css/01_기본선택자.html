@@ -12,12 +12,26 @@
     <style>
       /* 전체 선택자 */
       * {
-        margin: 0px;
+        --margin: 0px;
         padding: 0px;
       }
       /* 태그 선택자 */
       body {
         background-color: lemonchiffon;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        font-style: italic;
+      }
+      /* 아이디 선택자 */
+      #pick {
+        font-weight: bold;
+      }
+      /* 클래스 선택자 */
+      .text-item {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -31,10 +45,10 @@
     <hr />
 
     <ul>
-      <li>전체 선택자 *</li>
-      <li>태그 선택자</li>
-      <li>아이디 선택자</li>
-      <li>클래스 선택자</li>
+      <li class="text_item">전체 선택자 *</li>
+      <li class="text_item">태그 선택자</li>
+      <li class="text_item" id="pick">아이디 선택자</li>
+      <li class="text_item" id="pick">클래스 선택자</li>
     </ul>
     <script></script>
   </body>
