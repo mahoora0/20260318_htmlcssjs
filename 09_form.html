@@ -40,9 +40,39 @@
         </div>
         <div>
           <label for="female">여</label>
-          <input id="female" type="radio" name="gender" value="여" />
+          <input id="female" type="radio" name="gender" value="여" checked />
           <label for="male">남</label>
           <input id="male" type="radio" name="gender" value="남" />
+        </div>
+        <div>
+          <label for="chk_hobby">게임</label>
+          <input type="checkbox" name="hobby" id="chk_hobby" value="게임" />
+          <label for="chk_hobby_chess">체스</label>
+          <input
+            type="checkbox"
+            name="hobby"
+            id="chk_hobby_chess"
+            value="체스"
+          />
+          <label for="chk_hobby_movie">영화</label>
+          <input
+            type="checkbox"
+            name="hobby"
+            id="chk_hobby_movie"
+            value="영화"
+          />
+        </div>
+        <div>
+          <label>
+            모바일
+            <select id="mobile" name="mobile" id="mobile">
+              <option value="">선택하세요</option>
+              <option value="010">010</option>
+              <option value="011">011</option>
+            </select>
+            <input type="text" name="mobile01" id="mobile01" /> -
+            <input type="text" name="mobile02" id="mobile02" />
+          </label>
         </div>
         <div>
           <input type="button" value="작성 button" />
@@ -50,7 +80,7 @@
         </div>
       </fieldset>
     </form>
-  <input type="text" name="etc" id="etc">
+    <input type="text" name="etc" id="etc" />
     <a
       href="https://github.com/LeeGu-hun/20260318_htmlcssjs/blob/main/08_semantic.html"
       >LeeGu-hun</a
